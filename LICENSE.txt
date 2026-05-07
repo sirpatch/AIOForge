@@ -1,0 +1,18 @@
+Copyright (c) 2026 AIOFORGE
+
+This software is provided as a compiled, portable binary only.
+
+It is designed to run directly from any storage medium without installation, including (but not limited to) USB drives, hard drives, optical media, or other removable storage devices.
+
+Permission is granted to:
+- Use the software for personal and commercial purposes
+- Copy the executable for execution purposes only
+- Run the application from any compatible storage medium
+
+Restrictions:
+- You may not reverse engineer, decompile, or disassemble the software
+- You may not modify, alter, or create derivative versions
+- You may not redistribute modified versions
+- You may not sublicense, resell, or repackage the software
+
+All rights reserved.
