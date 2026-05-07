@@ -42,6 +42,19 @@ The following systems are currently non-functional or in early implementation:
 
 ---
 
+## 🎯 Current Development Focus
+
+The current priority of AIOFORGE is the **Audio Routing Engine**.
+
+This includes:
+- Reliable application audio session detection
+- Stable per-process audio endpoint assignment
+- Persistent routing across device and session changes
+
+Once routing is stable, DSP and advanced processing features will be expanded.
+
+---
+
 ## 🚧 Planned Features
 
 ### 🎛 DSP Engine
