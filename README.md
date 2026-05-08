@@ -83,3 +83,8 @@ Features may:
 - behave inconsistently across different hardware
 - depend heavily on audio drivers and Windows configuration
 - change significantly between versions
+
+---
+
+## 🏛 Tested Audio Chips
+- Realtek ALC897
