@@ -88,7 +88,7 @@ Features may:
 
 ## 🏛 Tested Audio Chips
   ✅ Working
-    - Realtek ALC897
+    Realtek ALC897
 
   ⚠️ Partially Working
-      - Conexant CX20590
+      Conexant CX20590
