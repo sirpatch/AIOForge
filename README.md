@@ -4,6 +4,10 @@ AIOFORGE is currently a long-term prototype under active development. Core syste
 
 ---
 
+## 🌐 WEBSITE
+
+https://aiof.patched.cc
+
 ## ✅ Working Features
 
 ### 🎚 Audio I/O Monitoring & Control
