@@ -14,14 +14,27 @@ https://aiof.patched.cc
 - Real-time input/output device monitoring  
 - Mute / unmute per audio session  
 - Volume control per device/session  
-- Live stereo visualization (R / L channel peak meters)  
+- Live stereo visualization (R / L channel peak meters)
+
+- Set default audio device (only via CFG tab for now)
+- Application audio detection / per-app tracking  
+- Speaker configuration changes  
+- Sample rate modification  
+- Bit depth control
+
+- Reliable application audio session detection
+- Stable per-process audio endpoint assignment
+
+- Per-app routing to devices (outputs)  
+- Per-app volume control 
+
 
 ### 🧾 Driver & Device Information
 - Audio codec detection  
 - Driver information retrieval  
 - API stack identification  
 - Registry path mapping  
-- Kernel Streaming (KS) device enumeration  
+- Kernel Streaming (KS) device enumeration
 
 ---
 
@@ -36,13 +49,7 @@ https://aiof.patched.cc
 
 ## ❌ Not Yet Working
 
-The following systems are currently non-functional or in early implementation:
-
-- Set default audio device  
-- Application audio detection / per-app tracking  
-- Speaker configuration changes  
-- Sample rate modification  
-- Bit depth control  
+The following systems are currently non-functional or in early implementation: 
 
 ---
 
@@ -67,9 +74,7 @@ Once routing is stable, DSP and advanced processing features will be expanded.
 - Optional per-input EQ  
 - Real-time signal processing pipeline  
 
-### 🎧 Application Audio Management
-- Per-app routing to devices  
-- Per-app volume control  
+### 🎧 Application Audio Management 
 - Playback control integration (play / pause / next / previous where supported)  
 
 ### 🔄 System Features
