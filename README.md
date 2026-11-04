@@ -101,13 +101,13 @@ For the latest changes, consult the [release notes](https://github.com/sirpatch/
 
 ---
 
-## Tested audio hardware
+## Tested audio hardware with RETASKING options
 
 The following hardware was listed in earlier project testing notes:
 
 | Codec | Reported status |
 |---|---|
 | Realtek ALC897 | Working |
-| Conexant CX20590 | Partially working |
+| Conexant CX20590 | May lack retask support |
 
 These results are not a guarantee of identical behavior on every system using the same codec; driver versions and system configuration can affect compatibility.
