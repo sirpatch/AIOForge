@@ -75,6 +75,18 @@ Jack detection and retasking are experimental and hardware-dependent. Detection 
 
 ---
 
+## Resource usage
+
+The following figures are **user-observed measurements**, not official benchmarks. Actual usage can vary depending on the system, audio devices, drivers, and workload.
+
+| Metric | Observed usage |
+|---|---:|
+| RAM | ~35 MB |
+| CPU at idle | 0–0.4% |
+| Occasional CPU peak | ~3.9% |
+
+<sub>Measurements reported on AIOForge V0.33.1.4 They should be treated as an example, not a performance guarantee for every version or system.</sub>
+
 ## Planned / not currently available
 
 The following items should not be considered working features unless a future release explicitly announces them:
