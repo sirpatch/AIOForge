@@ -1,103 +1,113 @@
-## 🧠 Current Status (Prototype)
+# AIOForge
 
-AIOFORGE is currently a long-term prototype under active development. Core systems are functional, but many advanced features are incomplete or experimental.
+**AIOForge (AIOF)** is a lightweight Windows audio management tool focused on granular control of audio devices, application audio, and configurable automation.
 
----
+It brings device management, per-application audio controls, profiles, and command-based hotkeys together in one compact application.
 
-## 🌐 WEBSITE
+🌐 **Website:** https://aiof.patched.cc  
+📦 **Downloads:** https://github.com/sirpatch/AIOForge/releases/
 
-https://aiof.patched.cc
-
-## ✅ Working Features
-
-### 🎚 Audio I/O Monitoring & Control
-- Real-time input/output device monitoring  
-- Mute / unmute per audio session  
-- Volume control per device/session  
-- Live stereo visualization (R / L channel peak meters)
-
-- Set default audio device (only via CFG tab for now)
-- Application audio detection / per-app tracking  
-- Speaker configuration changes  
-- Sample rate modification  
-- Bit depth control
-
-- Reliable application audio session detection
-- Stable per-process audio endpoint assignment
-
-- Per-app routing to devices (outputs)  
-- Per-app volume control 
-
-
-### 🧾 Driver & Device Information
-- Audio codec detection  
-- Driver information retrieval  
-- API stack identification  
-- Registry path mapping  
-- Kernel Streaming (KS) device enumeration
+> AIOForge is actively developed. Some hardware-related functionality remains experimental and behavior can vary depending on the audio device, codec, driver, and Windows configuration.
 
 ---
 
-## ⚠️ Partially Working Features
+## Features
 
-### 🔌 Jack Retasking (Experimental)
-- Basic audio jack detection works (inconsistent accuracy)
-- Mode switching (e.g. Line-In → Headphones) is not reliable
-- Hardware-dependent behavior (varies heavily by driver/codec)
+### Audio device management
+
+- Monitor available audio input and output devices.
+- Change the default playback and recording devices.
+- Control device volume and mute state.
+- Enable or disable individual devices.
+- Configure microphone mute state and volume.
+- Configure audio enhancements and exclusive-mode settings.
+- Change supported audio formats, including sample rate and bit depth.
+- Configure speaker layout and channel levels where supported.
+
+### Per-application audio control
+
+- Detect and track application audio sessions.
+- Adjust or mute individual applications.
+- Route an application's audio to another output device.
+- Send an application to the next available output or a selected output.
+
+### Command-based hotkeys
+
+Each hotkey can execute an ordered list of commands, rather than being limited to a single action. This makes it possible to build multi-step audio workflows and trigger them with one keyboard shortcut.
+
+Available command groups include:
+
+- **Output:** change the default output, switch to the next or previous output, and control output volume or mute state.
+- **Input:** change the default input and control microphone volume or mute state.
+- **Device:** control a specific device's volume, mute state, enabled state, audio enhancements, exclusive-mode setting, format, and speaker layout.
+- **App:** mute or adjust an application's volume and route it to another output.
+- **Profile:** apply a profile or move to the next or previous profile.
+- **System:** show or hide the main window, open the quick mixer, and wait before continuing a command sequence.
+- **Run:** launch a program or open a link.
+
+### Profiles
+
+AIOForge supports applying and cycling through audio profiles. Profiles can also be invoked from command-based hotkeys.
+
+### Device and driver information
+
+AIOForge exposes technical information about the audio stack, including:
+
+- Audio codec information.
+- Driver information.
+- Audio API stack identification.
+- Registry path information.
+- Kernel Streaming (KS) device enumeration.
+
+### Plugins
+
+AIOForge supports a plugin system with a Plugin SDK. The latest release includes an update to the SDK and compatibility fixes for launching the application with the latest plugin SDK.
+
+See the [project website](https://aiof.patched.cc) for the plugin and module information.
 
 ---
 
-## ❌ Not Yet Working
+## Experimental functionality
 
-The following systems are currently non-functional or in early implementation: 
+### Jack retasking
 
----
-
-## 🎯 Current Development Focus
-
-The current priority of AIOFORGE is the **Audio Routing Engine**.
-
-This includes:
-- Reliable application audio session detection
-- Stable per-process audio endpoint assignment
-- Persistent routing across device and session changes
-
-Once routing is stable, DSP and advanced processing features will be expanded.
+Jack detection and retasking are experimental and hardware-dependent. Detection may be inconsistent, and changing a jack's function is not reliable across codecs and drivers. Treat this functionality as experimental rather than a generally supported feature.
 
 ---
 
-## 🚧 Planned Features
+## Planned / not currently available
 
-### 🎛 DSP Engine
-- Per-application EQ  
-- Per-output device EQ  
-- Optional per-input EQ  
-- Real-time signal processing pipeline  
+The following items should not be considered working features unless a future release explicitly announces them:
 
-### 🎧 Application Audio Management 
-- Playback control integration (play / pause / next / previous where supported)  
-
-### 🔄 System Features
-- Automatic update checking on startup  
-- Version validation and update notifications  
-- Future support for modular feature expansion  
+- DSP processing pipeline.
+- Per-application and per-device equalizers.
+- Optional per-input EQ.
+- Media playback controls such as play, pause, next, and previous.
 
 ---
 
-## ⚠️ Important Note
+## Configuration and updates
 
-AIOFORGE is a **prototype system**, not a finished product.
-
-Features may:
-- behave inconsistently across different hardware
-- depend heavily on audio drivers and Windows configuration
-- change significantly between versions
+- Application configuration files are stored in the `cfg` directory under the AIOForge root directory.
+- AIOForge includes an automatic updater. See the [GitHub releases page](https://github.com/sirpatch/AIOForge/releases/) for release-specific changes.
 
 ---
 
-## 🏛 Tested Audio Chips
-✅ Working
-- Realtek ALC897
+## Compatibility notes
 
-⚠️ Partially Working
-- Conexant CX20590
+Audio functionality depends on the capabilities and behavior of the installed Windows audio devices and drivers. Individual features may not be available on every system, and hardware-specific features such as jack retasking can behave differently between codecs.
+
+For the latest changes, consult the [release notes](https://github.com/sirpatch/AIOForge/releases/).
+
+---
+
+## Tested audio hardware
+
+The following hardware was listed in earlier project testing notes:
+
+| Codec | Reported status |
+|---|---|
+| Realtek ALC897 | Working |
+| Conexant CX20590 | Partially working |
+
+These results are not a guarantee of identical behavior on every system using the same codec; driver versions and system configuration can affect compatibility.
