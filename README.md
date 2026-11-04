@@ -85,7 +85,7 @@ The following figures are **user-observed measurements**, not official benchmark
 | CPU at idle | 0–0.4% |
 | Occasional CPU peak | ~3.9% |
 
-<sub>Measurements reported on AIOForge V0.33.1.4 They should be treated as an example, not a performance guarantee for every version or system.</sub>
+<sub>Measurements reported on AIOForge V0.33.4 They should be treated as an example, not a performance guarantee for every version or system.</sub>
 
 ## Planned / not currently available
 
