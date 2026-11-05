@@ -204,7 +204,7 @@ The following figures are **user-observed measurements**, not official benchmark
 | Application size | Less than 2 MB | 1139858 bytes |
 | CPU idle | 0–0.4% | - |
 | CPU peak | ~4% | - |
-| RAM idle | 2–55 MB | Depends on GC |
+| RAM idle | 2–55 MB | Depends on GC and tool usage |
 | RAM peak | ~55 MB | - |
 
 <sub>Measurements reported on AIOForge V0.34.1 They should be treated as examples, not performance guarantees for every version or system.</sub>
