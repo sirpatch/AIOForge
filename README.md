@@ -84,12 +84,12 @@ Features include:
 
 **Equalizer parameters:**
 
-| Parameter | Range / Options |
-|---|---|
-| Frequency | 20 Hz – 20 kHz |
-| Gain | -18 dB to +18 dB |
-| Filter Type | Configurable |
-| Q Factor | Configurable |
+| Parameter | Range / Options | NOTICES |
+|---|---|---|
+| Frequency | 20 Hz – 20 kHz | Only GUI limits |
+| Gain | -18 dB to +18 dB | Only GUI limits |
+| Filter Type | Configurable | - |
+| Q Factor | Configurable | - |
 
 **Advanced parameter editing**
 
