@@ -59,6 +59,31 @@ AIOForge exposes technical information about the audio stack, including:
 - Registry path information.
 - Kernel Streaming (KS) device enumeration.
 
+## DSP Engine
+
+AIOForge V0.34.0 introduces an integrated DSP engine with support for both application-level and audio-device-level equalization.
+
+### Equalizer and Presets
+
+- Application EQ and device EQ.
+- Create, edit, and manage custom user presets.
+- Frequency range: 20 Hz – 20 kHz.
+- Gain range: -18 dB to +18 dB.
+- Configurable filter parameters:
+  - Type
+  - Frequency
+  - Gain
+  - Q factor
+- Additional controls:
+  - Limiter
+  - Compressor
+  - Preamp
+  - Balance
+  - Width
+  - Channel configuration
+
+DSP presets can be changed and applied through AIOForge's command-based hotkey system, allowing audio-processing configurations to become part of automated workflows.
+
 ### Plugins
 
 AIOForge supports a plugin system with a Plugin SDK. The latest release includes an update to the SDK and compatibility fixes for launching the application with the latest plugin SDK.
@@ -93,8 +118,6 @@ The following figures are **user-observed measurements**, not official benchmark
 
 The following items should not be considered working features unless a future release explicitly announces them:
 
-- DSP processing pipeline.
-- Per-application and per-device equalizers.
 - Optional per-input EQ.
 - Media playback controls such as play, pause, next, and previous.
 
