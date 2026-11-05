@@ -18,7 +18,7 @@ It brings device management, per-application audio controls, profiles, DSP proce
 ### Audio device management
 
 <img width="1980" alt="out" src="https://github.com/user-attachments/assets/5e040620-18bc-4efc-9090-b740fc3254f3"/>
-<img width="1920" alt="cfg-1" src="https://github.com/user-attachments/assets/09a3156b-c775-4e6b-a00e-c78ea23149b8" />
+<img width="1920" alt="cfg" src="https://github.com/user-attachments/assets/09a3156b-c775-4e6b-a00e-c78ea23149b8" />
 
 - Monitor available audio input and output devices.
 - Change the default playback and recording devices.
