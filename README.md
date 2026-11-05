@@ -6,6 +6,7 @@ It brings device management, per-application audio controls, profiles, DSP proce
 
 🌐 **Website:** https://aiof.patched.cc  
 📦 **Downloads:** https://github.com/sirpatch/AIOForge/releases/
+**Download only AIOF_VX.XX.X.xip** There is no usage for *.txt* and *txt.sig* files on client-side.
 
 > AIOForge is actively developed. Some hardware-related functionality remains experimental and behavior can vary depending on the audio device, codec, driver, and Windows configuration.
 
