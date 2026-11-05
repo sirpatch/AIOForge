@@ -17,6 +17,9 @@ It brings device management, per-application audio controls, profiles, DSP proce
 
 ### Audio device management
 
+<img width="1980" alt="out" src="https://github.com/user-attachments/assets/5e040620-18bc-4efc-9090-b740fc3254f3"/>
+<img width="1920" alt="cfg-1" src="https://github.com/user-attachments/assets/09a3156b-c775-4e6b-a00e-c78ea23149b8" />
+
 - Monitor available audio input and output devices.
 - Change the default playback and recording devices.
 - Control device volume and mute state.
@@ -27,6 +30,8 @@ It brings device management, per-application audio controls, profiles, DSP proce
 - Configure speaker layout and channel levels where supported.
 
 ### Per-application audio control
+
+<img width="1980" alt="apps" src="https://github.com/user-attachments/assets/be8b42fb-a37a-4572-bfc2-c6992a2b71a3" />
 
 - Detect and track application audio sessions.
 - Adjust or mute individual applications.
@@ -47,6 +52,8 @@ Available command groups include:
 - **System:** show or hide the main window, open the quick mixer, and wait before continuing a command sequence.
 - **Run:** launch a program or open a link.
 
+
+
 ### Profiles
 
 AIOForge supports applying and cycling through audio profiles. Profiles can also be invoked from command-based hotkeys.
@@ -64,6 +71,8 @@ AIOForge exposes technical information about the audio stack, including:
 ---
 
 ## DSP Engine
+
+<img width="1980" alt="dsp" src="https://github.com/user-attachments/assets/89592506-355e-444e-a1a1-01688bcfdbd4" />
 
 Introduced in **AIOForge V0.34.0**, the integrated DSP engine brings digital signal processing capabilities to individual applications and audio output devices.
 
@@ -180,6 +189,8 @@ The DSP engine is under active development. Additional filters, effects, and aud
 ---
 
 ### Plugins
+
+<img width="1980" alt="mods" src="https://github.com/user-attachments/assets/68a704d7-96ad-4adf-99be-1159ab70f906" />
 
 AIOForge supports a plugin system with a Plugin SDK. The latest release includes an update to the SDK and compatibility fixes for launching the application with the latest plugin SDK.
 
