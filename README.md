@@ -2,7 +2,7 @@
 
 **AIOForge (AIOF)** is a lightweight Windows audio management tool focused on granular control of audio devices, application audio, and configurable automation.
 
-It brings device management, per-application audio controls, profiles, and command-based hotkeys together in one compact application.
+It brings device management, per-application audio controls, profiles, DSP processing, and command-based hotkeys together in one compact application.
 
 🌐 **Website:** https://aiof.patched.cc  
 📦 **Downloads:** https://github.com/sirpatch/AIOForge/releases/
@@ -59,18 +59,28 @@ AIOForge exposes technical information about the audio stack, including:
 - Registry path information.
 - Kernel Streaming (KS) device enumeration.
 
+---
+
 ## DSP Engine
 
-Introduced in **AIOForge V0.34.0**, the integrated DSP engine brings digital signal processing capabilities to both applications and audio devices.
+Introduced in **AIOForge V0.34.0**, the integrated DSP engine brings digital signal processing capabilities to individual applications and audio output devices.
+
+Each DSP insert equalizes **one application or one output device**.
 
 ### Equalizer
 
-AIOForge currently supports:
+AIOForge features a configurable multi-band equalizer supporting up to **32 frequency bands**.
 
-- Application-level EQ
-- Device-level EQ
-- Custom user-created presets
-- Preset creation and management
+Features include:
+
+- Application-level EQ.
+- Device-level EQ.
+- Custom user-created presets.
+- Preset creation and management.
+- Add and remove individual frequency bands.
+- Enable or disable individual bands.
+- Built-in presets.
+- Save, rename, delete, import, and export presets.
 
 **Equalizer parameters:**
 
@@ -81,51 +91,97 @@ AIOForge currently supports:
 | Filter Type | Configurable |
 | Q Factor | Configurable |
 
+**Advanced parameter editing**
+
+EQ band parameters can be entered manually using numeric input fields.
+
+This allows users to enter precise custom values beyond the increments or ranges exposed by the GUI sliders and controls.
+
 ### Additional DSP Controls
 
-The DSP engine also provides:
+The DSP engine provides several additional processing controls.
 
-- Limiter
-- Compressor
+**General**
+
 - Preamp
 - Balance
-- Width
+- Stereo width
 - Channel configuration
+
+**Limiter**
+
+- Enable or disable limiter.
+- Adjustable ceiling.
+- Adjustable release time.
+
+**Compressor**
+
+- Enable or disable compressor.
+- Adjustable threshold.
+- Adjustable ratio.
+- Adjustable attack time.
+- Adjustable release time.
+- Adjustable makeup gain.
+
+### Multichannel Audio
+
+DSP supports more than standard stereo output, with multichannel configurations supported up to **7.1 surround sound**.
+
+Channel configuration can be selected directly in the DSP editor.
+
+### Processing Order
+
+The DSP processing chain follows this order:
+
+1. Channels
+2. Width
+3. Preamp
+4. EQ bands
+5. Compressor
+6. Balance
+7. Limiter
+
+An A/B bypass control is also available for comparing processed and bypassed audio during live preview.
 
 ### DSP Routing
 
-DSP processing uses dedicated audio-routing configurations.
+AIOForge supports flexible DSP routing, allowing users to choose between direct playback and separate-output configurations.
 
-**Device EQ**
-- Select a Source Device.
-- Configure its DSP processing.
-- Route audio to a destination device.
+**DIRECT mode**
 
-**Application EQ**
-- Select an application.
-- Configure its `Play On` destination.
-- Select a `Silent Sink` as part of the routing configuration.
+- Process audio using a single output device.
+- No separate destination output is required.
+- Enable the `DIRECT` checkbox to use this configuration.
 
-**Note:** Selecting a Source Device or Silent Sink does not automatically mute the original audio playback.
+**Two-output mode**
+
+- Use a separate source and destination output configuration.
+- Disable `DIRECT` to use the separate-output routing configuration.
+- Useful for setups involving multiple audio devices.
 
 ### Hotkey Integration
 
 DSP presets integrate with AIOForge's command-based hotkey system.
 
 Users can:
+
 - Apply DSP presets using hotkeys.
 - Change DSP configurations through automated command sequences.
 - Include DSP preset changes in broader audio-control workflows.
+
+This allows audio-processing configurations to become part of automated workflows alongside AIOForge's existing application, device, output, and profile management.
 
 ### Future Development
 
 The DSP engine is under active development. Additional filters, effects, and audio-processing capabilities are planned for future updates.
 
+---
+
 ### Plugins
 
 AIOForge supports a plugin system with a Plugin SDK. The latest release includes an update to the SDK and compatibility fixes for launching the application with the latest plugin SDK.
 
-See the [project website](https://aiof.patched.cc) for the plugin and module information.
+See the [project website](https://aiof.patched.cc) for plugin and module information.
 
 ---
 
@@ -143,13 +199,15 @@ The following figures are **user-observed measurements**, not official benchmark
 
 | Metric | Observed usage |
 |---|---:|
-| SPACE NEEDED | LESS THAN 5 MB |
-| CPU idle | 0–0.4 % |
-| CPU peak | ~3.9 % |
-| RAM IDLE | 2-45 MB |
-| RAM PEAK| ~35 MB |
+| Application size | Less than 5 MB |
+| CPU idle | 0–0.4% |
+| CPU peak | ~3.9% |
+| RAM idle | 2–45 MB |
+| RAM peak | ~35 MB |
 
-<sub>Measurements reported on AIOForge V0.33.4 They should be treated as an example, not a performance guarantee for every version or system.</sub>
+<sub>Measurements reported on AIOForge V0.33.4. They should be treated as examples, not performance guarantees for every version or system.</sub>
+
+---
 
 ## Planned / not currently available
 
