@@ -146,7 +146,7 @@ The following figures are **user-observed measurements**, not official benchmark
 | SPACE NEEDED | LESS THAN 5 MB |
 | CPU idle | 0–0.4 % |
 | CPU peak | ~3.9 % |
-| RAM IDLE | 2-35 MB |
+| RAM IDLE | 2-45 MB |
 | RAM PEAK| ~35 MB |
 
 <sub>Measurements reported on AIOForge V0.33.4 They should be treated as an example, not a performance guarantee for every version or system.</sub>
