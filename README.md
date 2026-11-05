@@ -61,28 +61,65 @@ AIOForge exposes technical information about the audio stack, including:
 
 ## DSP Engine
 
-AIOForge V0.34.0 introduces an integrated DSP engine with support for both application-level and audio-device-level equalization.
+Introduced in **AIOForge V0.34.0**, the integrated DSP engine brings digital signal processing capabilities to both applications and audio devices.
 
-### Equalizer and Presets
+### Equalizer
 
-- Application EQ and device EQ.
-- Create, edit, and manage custom user presets.
-- Frequency range: 20 Hz – 20 kHz.
-- Gain range: -18 dB to +18 dB.
-- Configurable filter parameters:
-  - Type
-  - Frequency
-  - Gain
-  - Q factor
-- Additional controls:
-  - Limiter
-  - Compressor
-  - Preamp
-  - Balance
-  - Width
-  - Channel configuration
+AIOForge currently supports:
 
-DSP presets can be changed and applied through AIOForge's command-based hotkey system, allowing audio-processing configurations to become part of automated workflows.
+- Application-level EQ
+- Device-level EQ
+- Custom user-created presets
+- Preset creation and management
+
+**Equalizer parameters:**
+
+| Parameter | Range / Options |
+|---|---|
+| Frequency | 20 Hz – 20 kHz |
+| Gain | -18 dB to +18 dB |
+| Filter Type | Configurable |
+| Q Factor | Configurable |
+
+### Additional DSP Controls
+
+The DSP engine also provides:
+
+- Limiter
+- Compressor
+- Preamp
+- Balance
+- Width
+- Channel configuration
+
+### DSP Routing
+
+DSP processing uses dedicated audio-routing configurations.
+
+**Device EQ**
+- Select a Source Device.
+- Configure its DSP processing.
+- Route audio to a destination device.
+
+**Application EQ**
+- Select an application.
+- Configure its `Play On` destination.
+- Select a `Silent Sink` as part of the routing configuration.
+
+**Note:** Selecting a Source Device or Silent Sink does not automatically mute the original audio playback.
+
+### Hotkey Integration
+
+DSP presets integrate with AIOForge's command-based hotkey system.
+
+Users can:
+- Apply DSP presets using hotkeys.
+- Change DSP configurations through automated command sequences.
+- Include DSP preset changes in broader audio-control workflows.
+
+### Future Development
+
+The DSP engine is under active development. Additional filters, effects, and audio-processing capabilities are planned for future updates.
 
 ### Plugins
 
