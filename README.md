@@ -6,6 +6,7 @@ It brings device management, per-application audio controls, profiles, DSP proce
 
 🌐 **Website:** https://aiof.patched.cc  
 📦 **Downloads:** https://github.com/sirpatch/AIOForge/releases/
+⚙️ **PLUGIN SDK / KIT** https://github.com/sirpatch/AIOForge/releases/download/V0.34.2/AIOF-PluginSDK-1.1.0.zip
 
 **Download only AIOF_VX.XX.X.xip** There is no usage for *.txt* and *txt.sig* files on client-side.
 
