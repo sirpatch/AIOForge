@@ -170,6 +170,12 @@ AIOForge supports flexible DSP routing, allowing users to choose between direct 
 - Disable `DIRECT` to use the separate-output routing configuration.
 - Useful for setups involving multiple audio devices.
 
+## SHARE AUDIO
+
+Introduced in AIOForge V0.34.2
+supports playing one audio stream across many decices at once.
+WARNING: audio quality may be lower and/or vary between devices.
+
 ### Hotkey Integration
 
 DSP presets integrate with AIOForge's command-based hotkey system.
