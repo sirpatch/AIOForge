@@ -8,7 +8,8 @@ It brings device management, per-application audio controls, profiles, DSP proce
 📦 **Downloads:** https://github.com/sirpatch/AIOForge/releases/  
 ⚙️ **PLUGIN SDK / KIT** https://github.com/sirpatch/AIOForge/releases/download/V0.34.2/AIOF-PluginSDK-1.1.0.zip
 
-**Download only AIOF_VX.XX.X.xip** There is no usage for *.txt* and *txt.sig* files on client-side.
+**Download only AIOF_VX.XX.X.zip** or AIOF-PluginSDK-X.X.X.zip.
+There is no usage for *.txt* and *txt.sig* files on client-side.
 
 > AIOForge is actively developed. Some hardware-related functionality remains experimental and behavior can vary depending on the audio device, codec, driver, and Windows configuration.
 
