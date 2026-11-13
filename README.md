@@ -204,7 +204,7 @@ The DSP engine is under active development. Additional filters, effects, and aud
 
 AIOForge supports a plugin system with a Plugin SDK. The latest release includes an update to the SDK and compatibility fixes for launching the application with the latest plugin SDK.
 
-See the [project website](https://aiof.patched.cc) for plugin and module information.
+See the [project website](https://aiof.patched.cc/modules) for plugin and module information.
 
 ---
 
