@@ -4,6 +4,9 @@
 
 It brings device management, per-application audio controls, profiles, DSP processing, and command-based hotkeys together in one compact application.
 
+AIOF_VX.XX.XX.zip -> Build for windows 10 and newer  
+AIOF_X.XX.XX.LEGACY.zip -> Build for windows XP and newer  |  ***SOON***
+
 🌐 **Website:** https://aiof.patched.cc  
 📦 **Downloads:** https://github.com/sirpatch/AIOForge/releases/  
 ⚙️ **PLUGIN SDK / KIT** https://github.com/sirpatch/AIOForge/releases/download/V0.34.2/AIOF-PluginSDK-1.1.0.zip
@@ -205,6 +208,21 @@ The DSP engine is under active development. Additional filters, effects, and aud
 AIOForge supports a plugin system with a Plugin SDK. The latest release includes an update to the SDK and compatibility fixes for launching the application with the latest plugin SDK.
 
 See the [project website](https://aiof.patched.cc/modules) for plugin and module information.
+
+---
+
+## 📱 Mobile App – Remote Management
+
+AIOForge is expanding beyond the desktop with a companion mobile application designed to provide remote access to AIOForge functionality.
+
+The mobile app aims to make managing your audio setup more convenient, allowing you to interact with AIOForge without having to sit at your PC.
+
+<img width="512" alt="OUT-MOBILE" src="https://github.com/user-attachments/assets/ce03556b-f137-430d-80b9-c04b90b5046b" />
+<img width="512" alt="APPS-MOBILE" src="https://github.com/user-attachments/assets/8f55f553-81c3-4eca-ab2c-fbc81810229b" />
+
+
+
+**Development status:** The mobile application is currently in active development.
 
 ---
 
